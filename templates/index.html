@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask App</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h2>Simple Flask Frontend + Backend App</h2>
+
+    <form method="post">
+        <input type="text" name="username" placeholder="Enter your name">
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if name %}
+        <h3>Hello {{ name }} 👋</h3>
+    {% endif %}
+</body>
+</html>
